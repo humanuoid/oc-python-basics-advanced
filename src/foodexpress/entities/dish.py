@@ -7,4 +7,8 @@ class Dish:
     available: bool
 
     def describe(self) -> str:
-        return f"{self.name} ({round(self.price, 1)} €) - {"disponible" if self.available else "Indisponible" }"
+        if self.available:
+            statut = "disponible"
+        else:
+            statut = "indisponible"
+        return f"{self.name} ({self.price} €) - {statut}"
