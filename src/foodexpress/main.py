@@ -1,4 +1,4 @@
-from foodexpress.Entities.Dish import Dish
+from foodexpress.entities.dish import Dish
 
 products = [
     Dish("Pizza", 12.0, True),
